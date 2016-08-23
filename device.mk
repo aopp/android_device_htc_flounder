@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
 
 # for keyboard key mappings
 PRODUCT_PACKAGES += \
-	VolantisKeyboard
+    VolantisKeyboard
 
 # for launcher layout
 #PRODUCT_PACKAGES += \
