@@ -1,2 +1,13 @@
 # Audio
 lib/soundfx/libfmas.so
+
+# GPS
+lib/libloc_core.so
+lib/libloc_eng.so
+lib/libgps.utils.so
+lib/hw/gps.default.so
+
+lib64/libloc_core.so
+lib64/libloc_eng.so
+lib64/libgps.utils.so
+lib64/hw/gps.default.so
