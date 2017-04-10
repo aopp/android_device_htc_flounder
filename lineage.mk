@@ -27,8 +27,9 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/htc/flounder
-TARGET_KERNEL_CONFIG := lineage_flounder_defconfig
+TARGET_KERNEL_CONFIG := aopp_flounder_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Extra Packages
 PRODUCT_PACKAGES += \
@@ -43,6 +44,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="volantis-user 7.1.1 N4F26T 3687331 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_flounder
+PRODUCT_NAME := aopp_flounder
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 9
+PRODUCT_MODEL := Pwn Pad
