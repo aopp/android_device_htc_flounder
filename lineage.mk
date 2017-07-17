@@ -11,9 +11,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
@@ -40,8 +40,8 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/flounder/overlay-cm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
-    BUILD_FINGERPRINT=google/volantis/flounder:7.1.1/N4F26X/3821951:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 7.1.1 N4F26X 3821951 release-keys"
+    BUILD_FINGERPRINT=google/volantis/flounder:7.1.1/N9F27F/4072790:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 7.1.1 N9F27F 4072790 release-keys"
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aopp_flounder
